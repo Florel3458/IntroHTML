@@ -1,0 +1,71 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+    Filename: styles.css
+    Written by: Elizabeth Weisbrod
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: firebrick;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    color: crimson;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1; 
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a, i {
+    text-align: center; 
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+main {
+    padding: 3%;
+    font-size: 115%;
+}
+
+.StatBlock {
+    text-align: center;
+}
+
+.StatBlock ul {
+    list-style-type: none;
+    margin: .5;
+    padding: 0;
+}
+
+footer {
+    background-color: #f2f2ca;
+}
+
+footer p {
+    font-size: 0.75em; 
+    text-align: center;
+    color: black;
+    padding: 0 1em;
+}
