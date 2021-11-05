@@ -43,18 +43,22 @@ function rollStats() {
         // get the total of all rolls
         alltotal += total;
         rolls += 1;
+        /*
+        alert (alltotal);
+        alert (rolls);
+        */
     }
     // add flavor text..... so much if/else is probably super inefficient but...
     document.getElementById("rollTotal").innerHTML = "Your total is " + alltotal + "..."
-    if (allroll >= 90) {
+    if (alltotal >= 90) {
         document.getElementById("rollFlavor").innerHTML = "An extremely good roll!!!";
-    } else if (allroll >= 82) {
+    } else if (alltotal >= 82) {
         document.getElementById("rollFlavor").innerHTML = "A very good roll!!";
-    } else if (allroll >= 70) {
+    } else if (alltotal >= 70) {
         document.getElementById("rollFlavor").innerHTML = "A nice roll!";
-    } else if (allroll >= 64) {
+    } else if (alltotal >= 64) {
         document.getElementById("rollFlavor").innerHTML = "An okay roll.";
-    } else if (allroll >= 55) {
+    } else if (alltotal >= 55) {
         document.getElementById("rollFlavor").innerHTML = "Might be a bit low.";
     } else document.getElementById("rollFlavor").innerHTML = "Yikes...";
 }
