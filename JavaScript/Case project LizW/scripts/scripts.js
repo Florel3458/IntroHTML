@@ -25,7 +25,7 @@ function rollStats() {
         d4 = Math.trunc(d4);
         lowest = (Math.min(d1, d2, d3, d4));
 
-        // drop the lowest roll
+        // drop the lowest roll only once
         if (d1 == lowest) {
             d1 = 0;
         } else if (d2 == lowest) {
@@ -61,4 +61,12 @@ function rollStats() {
     } else if (alltotal >= 55) {
         document.getElementById("rollFlavor").innerHTML = "Might be a bit low.";
     } else document.getElementById("rollFlavor").innerHTML = "Yikes...";
+    /*
+    108 - 90 = extremely good
+    89  - 82 = very good
+    81  - 70 = nice
+    69  - 64 = okay
+    63  - 55 = maybe low
+    54  - 18 = yikes
+    */
 }
