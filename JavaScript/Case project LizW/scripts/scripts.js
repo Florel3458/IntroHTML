@@ -40,7 +40,7 @@ function rollStats() {
             document.getElementById("statRoll" + rolls).innerHTML = "＜0" + total + "＞";
         } else document.getElementById("statRoll" + rolls).innerHTML = "＜" + total + "＞";
 
-        // get the total of all rolls
+        // add up the full total and progress the loop
         alltotal += total;
         rolls += 1;
         /*
