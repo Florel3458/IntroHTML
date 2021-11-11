@@ -10,21 +10,17 @@ body, header, nav, main, footer, h1, div, img {
     border: 0;
 }
 
-<<<<<<< HEAD
 img {
     max-width: 100%;
     display: block;
 }
 
-=======
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
 .center {
     display: block;
     margin: 0 auto;
     width: 25%;
 }
 
-<<<<<<< HEAD
 header {
     background-color: #f0f0c8;
 }
@@ -32,17 +28,11 @@ header {
 h1, h2 {
     text-align: center;
     color: #b22222;
-=======
-h1, h2 {
-    text-align: center;
-    color: firebrick;
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
     font-family: 'Dancing Script', cursive;
     font-size: 2em
 }
 
 body {
-<<<<<<< HEAD
     background-color: #fafad2;
     color: #dc143c;
 }
@@ -50,19 +40,11 @@ body {
 nav {
     background-color: #f3f3d1;
     color: #e00000
-=======
-    background-color: lightgoldenrodyellow;
-    color: crimson;
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
 }
 
 nav ul {
     list-style-type: none;
-<<<<<<< HEAD
     margin: 1em; 
-=======
-    margin: 1; 
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
     text-align: center;
 }
 
@@ -70,7 +52,6 @@ nav li {
     display: inline-block;
 }
 
-<<<<<<< HEAD
 nav li a {
     text-align: center; 
     padding: 0.5em 1em;
@@ -83,12 +64,6 @@ nav li i {
     padding: 0.5em 1em;
     text-decoration: none;
     color: #000000
-=======
-nav li a, i {
-    text-align: center; 
-    padding: 0.5em 1em;
-    text-decoration: none;
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
 }
 
 main {
@@ -98,19 +73,12 @@ main {
 
 .StatBlock {
     text-align: center;
-<<<<<<< HEAD
     background-color: #f3f3cb;
-=======
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
 }
 
 .StatBlock ul {
     list-style-type: none;
-<<<<<<< HEAD
     margin: 0.5em;
-=======
-    margin: .5;
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
     padding: 0;
 }
 
@@ -121,7 +89,6 @@ footer {
 footer p {
     font-size: 0.75em; 
     text-align: center;
-<<<<<<< HEAD
     color: #000000;
     padding: 0 1em;
 }
@@ -135,8 +102,3 @@ footer p {
     padding: 0.5em;
     background-color: #f3f3cb
 }
-=======
-    color: black;
-    padding: 0 1em;
-}
->>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
