@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Die Roller</title>
+</head>
+
+<body>
+    <h1>Die Roller!</h1>
+    <!-- In Case Project, give unique id to anything you want to mess with in JavaScript-->
+    <img src="image/allDice.png" id="die1" alt="Image of 6 dice" title="Image of 6 dice" width="150">
+    <img src="image/allDice.png" id="die2" alt="Image of 6 dice" title="Image of 6 dice" width="150">
+    <p id="dieTotal"></p>
+    
+    <button onclick="rollTheDice();">Roll the dice</button>
+
+    <script>
+        function rollTheDice() {
+            var dice1;
+            var dice2;
+            var total;
+
+            dice1 = Math.random() * 6 + 1; //between 1 and 6
+            dice1 = Math.trunc(dice1);
+
+            dice2 = Math.random() * 6 + 1; //between 1 and 6
+            dice2 = Math.trunc(dice2);
+
+            total = dice1 + dice2;
+            //Set the innerHTML property for the element with the id "dieTotal" to the value of the total variable, and concatenate "The total is" to the left of that total
+            document.getElementById("dieTotal").innerHTML = "The total is " + total;
+            //display pictures
+            document.getElementById("die1").src = "image/" + dice1 + ".png";
+            //images/1.png
+            document.getElementById("die2").src = "image/" + dice2 + ".png";
+
+            //Examples of CONDITIONAL and LOGICAL OPERATORS
+            //check if total is 2, log a different message if true vs false
+            //(total === 2) ? console.log("Snake Eyes!") : console.log("Not Snake Eyes");
+            // can test two or more conditions if you separate them with OR || or AND &&. Here, we show different message depending on if total is EITHER 2 or 12:
+            //(total === 2 || total === 12) ? console.log("bad roll") : console.log("good roll");
+
+            //let roller1 = "Liz";
+            //let roller2 = "Josh";
+            //(roller1 === "Liz" && roller2 === "Josh") ? console.log("Josh AND Liz are rolling") : console.log("One or neither is rolling");
+            // then give both vars above falsy values (empty the quotes above) and we just check the variable names, no equals:
+            //(roller1 && roller2) ? console.log("Two people are rolling") : console.log("One or both variables are empty strings");
+
+        }
+    </script>
+
+</body>
+
+</html>
