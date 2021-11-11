@@ -4,9 +4,16 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img {
-    margin: 0; 
-    padding: 0; 
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img {
+    margin: 0;
+    padding: 0;
     border: 0;
 }
 
@@ -25,7 +32,8 @@ header {
     background-color: #f0f0c8;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     color: #b22222;
     font-family: 'Dancing Script', cursive;
@@ -38,13 +46,17 @@ body {
 }
 
 nav {
+    margin: 0.5em;
     background-color: #f3f3d1;
-    color: #e00000
+    color: #e00000;
+    border-width: 2px;
+    border-bottom-style: outset;
+    border-color: #d00000;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 1em; 
+    margin: 1em;
     text-align: center;
 }
 
@@ -53,14 +65,14 @@ nav li {
 }
 
 nav li a {
-    text-align: center; 
+    text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
     color: #ff0000
 }
 
 nav li i {
-    text-align: center; 
+    text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
     color: #000000
@@ -87,7 +99,7 @@ footer {
 }
 
 footer p {
-    font-size: 0.75em; 
+    font-size: 0.75em;
     text-align: center;
     color: #000000;
     padding: 0 1em;

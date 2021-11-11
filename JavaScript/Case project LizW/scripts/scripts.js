@@ -100,16 +100,16 @@ function rollStats() {
             document.getElementById("rollHiFlavor").innerHTML = "You would definitely be able to make a strong character with this!";
             break
         case 3:
-            document.getElementById("rollHiFlavor").innerHTML = "This is pretty good!" + "<br>" + 
-            "Think about which stats would be important for your character.";
+            document.getElementById("rollHiFlavor").innerHTML = "This is pretty good!" + "<br>" +
+                "Think about which stats would be important for your character.";
             break
         case 2:
         case 1:
-            document.getElementById("rollHiFlavor").innerHTML = "This is good!" + "<br>" + 
-            "Think about which stats would be extra important for your character.";
+            document.getElementById("rollHiFlavor").innerHTML = "This is good!" + "<br>" +
+                "Think about which stats would be extra important for your character.";
             break
         default: // no stats reach 15
-            document.getElementById("rollHiFlavor").innerHTML = "Unfortunately you didn't roll any high numbers," + "<br>" + 
-            "but it could still be okay!";
+            document.getElementById("rollHiFlavor").innerHTML = "Unfortunately you didn't roll any high numbers," + "<br>" +
+                "but it could still be okay!";
     }
 }
