@@ -4,17 +4,27 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 function rollStats() {
+<<<<<<< HEAD
+=======
+    var rolls = 1;
+>>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
     var d1;
     var d2;
     var d3;
     var d4;
     var lowest;
     var total;
+<<<<<<< HEAD
     var allTotal = 0;
     var highRolls = 0;
 
     // loop that runs 6 times
     for (let i = 1; i <= 6; i++) {
+=======
+    var alltotal = 0;
+
+    while (rolls <= 6) {
+>>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
         // roll 4d6 and find the lowest roll
         d1 = Math.random() * 6 + 1;
         d1 = Math.trunc(d1);
@@ -37,6 +47,7 @@ function rollStats() {
 
         // put the total into text
         total = d1 + d2 + d3 + d4;
+<<<<<<< HEAD
 
         // if the total is a single digit, adds a 0 before it (eg. "＜06＞")
         // if the total is an 18, adds a fancy border (eg. "*＊＜18＞＊*") and adds 2 to highRolls
@@ -71,6 +82,32 @@ function rollStats() {
         document.getElementById("rollFlavor").innerHTML = "An okay roll.";
     } else if (allTotal >= 55) {
         document.getElementById("rollFlavor").innerHTML = "Could be a bit low.";
+=======
+        if (total <= 9) {
+            document.getElementById("statRoll" + rolls).innerHTML = "＜0" + total + "＞";
+        } else document.getElementById("statRoll" + rolls).innerHTML = "＜" + total + "＞";
+
+        // add up the full total and progress the loop
+        alltotal += total;
+        rolls += 1;
+        /*
+        alert (alltotal);
+        alert (rolls);
+        */
+    }
+    // add flavor text..... so much if/else is probably super inefficient but...
+    document.getElementById("rollTotal").innerHTML = "Your total is " + alltotal + "..."
+    if (alltotal >= 90) {
+        document.getElementById("rollFlavor").innerHTML = "An extremely good roll!!!";
+    } else if (alltotal >= 82) {
+        document.getElementById("rollFlavor").innerHTML = "A very good roll!!";
+    } else if (alltotal >= 70) {
+        document.getElementById("rollFlavor").innerHTML = "A nice roll!";
+    } else if (alltotal >= 64) {
+        document.getElementById("rollFlavor").innerHTML = "An okay roll.";
+    } else if (alltotal >= 55) {
+        document.getElementById("rollFlavor").innerHTML = "Might be a bit low.";
+>>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
     } else document.getElementById("rollFlavor").innerHTML = "Yikes...";
     /*
     108 - 90 = extremely good
@@ -80,6 +117,7 @@ function rollStats() {
     63  - 55 = maybe low
     54  - 18 = yikes
     */
+<<<<<<< HEAD
 
     // basically there are two advisors here.
     // one for your total, and one for your actual stats.
@@ -113,3 +151,6 @@ function rollStats() {
             "but it could still be okay!";
     }
 }
+=======
+}
+>>>>>>> 66daf112e532e7e9910651f59e267c9ee1e4f739
