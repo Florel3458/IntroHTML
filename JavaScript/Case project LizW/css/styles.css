@@ -4,21 +4,14 @@
 \*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* CSS Reset */
-body,
-header,
-nav,
-main,
-footer,
-h1,
-div,
-img {
+body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, p, div, img {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -32,8 +25,7 @@ header {
     background-color: #f0f0c8;
 }
 
-h1,
-h2 {
+h1, h2 {
     text-align: center;
     color: #b22222;
     font-family: 'Dancing Script', cursive;
@@ -45,6 +37,13 @@ body {
     color: #dc143c;
 }
 
+a{
+    color: #ff00d0;
+}
+a:hover{
+    color: #770000;
+}
+
 nav {
     margin: 0.5em;
     background-color: #f3f3d1;
@@ -53,24 +52,23 @@ nav {
     border-bottom-style: outset;
     border-color: #d00000;
 }
-
 nav ul {
     list-style-type: none;
     margin: 1em;
     text-align: center;
 }
-
 nav li {
     display: inline-block;
 }
-
 nav li a {
     text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
-    color: #ff0000
+    color: #ff0000;
 }
-
+nav li a:hover {
+    color: #770000;
+}
 nav li i {
     text-align: center;
     padding: 0.5em 1em;
@@ -87,7 +85,6 @@ main {
     text-align: center;
     background-color: #f3f3cb;
 }
-
 .StatBlock ul {
     list-style-type: none;
     margin: 0.5em;
@@ -97,7 +94,6 @@ main {
 footer {
     background-color: #f2f2ca;
 }
-
 footer p {
     font-size: 0.75em;
     text-align: center;

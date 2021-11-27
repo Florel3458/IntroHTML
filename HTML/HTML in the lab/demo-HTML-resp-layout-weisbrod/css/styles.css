@@ -1,0 +1,259 @@
+/*
+Author: Elizabeth Weisbrod
+Date: Nov 11, 2021
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, p, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* STYLING FOR IMAGES (unless overruled further down in this sheet) */
+img {
+	/* make image widen to fill the tag it's inside of: */
+	width: 100%;
+	display: block;
+}
+
+/* STYLING FOR ALL LINKS (unless overruled further down in this sheet) */
+a {
+	color: #009999;
+}
+
+/* :hover is a 'pseudoclass' saying what link looks like during mouseover */
+a:hover {
+	color: #003333;
+}
+
+/* STYLING FOR MOBILE SCREENS FIRST */
+/* HTML construct tag */
+html {
+	/* setting font-size here acts as a multiplier for all font sizes styled below that use em, rem, or % */
+	font-size: 100%;
+}
+
+body {
+	/* some text styling defined here will be INHERITED by all elements within the body, unless overridden further down this sheet: */
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	/* setting font-size here acts as a multiplier for all font sizes styled below that use em, rem, or % */
+	font-size: 100%;
+}
+
+/* BACKGROUNDS FOR DIFFERENT AREAS: */
+.wrapper-header {
+	/* will stretch 100% of the way across any screen. width is 100% by default even if we DON'T declare this width */
+	background-color: #333366;
+}
+
+.wrapper-nav {
+	background-color: #000000;
+}
+
+.wrapper-main {
+	/* Standard modern practice to let most of content have white background */
+	background-color: #ffffff;
+}
+
+.wrapper-footer {
+	background-color: #333366;
+}
+
+/* TYPOGRAPHIC STYLING */
+p {
+	font-size: 1rem;
+	padding-bottom: .5rem;
+}
+
+li {
+	font-size: 1rem;
+	padding-bottom: .5rem;
+}
+
+/* comma separated list means all will share these styles: */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	/* in case heading flows onto a second line: */
+	line-height: 1.1;
+}
+
+h1 {
+	/* using px unit makes it same size on all screen widths: */
+	font-size: 20px;
+	/* major headings are a good place for non-black text color and custom font-family (use the same 2-3 custom fonts in a project) */
+	color: #ffcc99;
+}
+
+h2 {
+	/* using em, rem, or % unit lets us easily change its size on various screen widths */
+	font-size: 2rem;
+	color: #996600;
+	margin: 2rem 1rem 2rem 1rem;
+	/* the 4 values are space above, right, below, and left  */
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h6 {
+	font-size: .8rem;
+}
+
+/* SPECIFIC STYLING BY CLASS */
+/* In the HTML, give footer <p> tag this class: */
+.footer-small-text {
+	color: #9999ff;
+	font-size: .8rem;
+}
+
+/* PAGE STRUCTURE ELEMENTS --let's keep text from touching edge! */
+header {
+	/* Unlike margin, padding is space along INSIDE edge */
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+footer {
+	/* fewer than 4 values? the existing value gets used for all four: */
+	padding: 1rem;
+}
+
+aside {
+	padding: 1rem;
+	background-color: #ccccff;
+	/* subtly different from white page background. */
+	margin: 1rem;
+	/* might add margin. Makes aside look like it's related to article. */
+}
+
+article {
+	/* since this has neither border nor background, margin and padding have the same effect: */
+	padding: 1rem 1rem 2rem 1rem;
+}
+
+section {
+	padding: 1rem 0;
+	/* or just say padding-top: 1rem and padding-bottom: 0rem; or padding: 1rem 0; */
+}
+
+/* MAIN NAV */
+/* Strip away list styling for ul list, but ONLY if inside a nav */
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* override and cancel the space we added below EVERY LI on line 65 above */
+
+nav li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Styling for <a> tags but ONLY if inside an li that's inside nav */
+nav li a {
+	display: block;
+	font-size: 20px;
+	color: #cccc99;
+	text-align: center;
+	padding: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color: #ffffff;
+	background-color: #222244;
+}
+
+.hero-image-mobile {
+	display: block;
+	/* appears for small screens */
+}
+
+.hero-image-desktop {
+	display: none;
+	/* hidden for small screens */
+}
+
+/* STYLING FOR WIDER SCREENS -- add Bracket Pair Colorizer 2 Extension to VS Code to colorize braces */
+@media screen and (min-width:480px) {
+	html {
+		/* scale all em, rem, and % amounts up by 10%: */
+		font-size: 110%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 2% 0 2%;
+	}
+} /* closes 480px M Q */
+
+
+
+@media screen and (min-width:768px) {
+	html {
+		/* scale all em, rem, and % amounts up by 20%: */
+		font-size: 120%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 4% 0 4%;
+	}
+
+	/* on wider screens, hide mobile menu icon and display main nav links side-by-side: */
+	.menu-icon {
+		display: none;
+	}
+
+	nav li {
+		display: inline-block;
+	}
+
+	.hero-image-mobile {
+		display: none;
+		/* hidden for wider screens */
+	}
+
+	.hero-image-desktop {
+		display: block;
+		/* appears for wider screens */
+	}
+} /* closes 768px M Q */
+
+@media screen and (min-width:960px) {
+	html {
+		/* scale all em, rem, and % amounts up by 40%: */
+		font-size: 140%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 8% 0 8%;
+	}
+} /* closes 960px M Q */
+
+@media screen and (min-width:1280px) {
+	html {
+		/* scale all em, rem, and % amounts up by 60%: */
+		font-size: 160%;
+	}
+
+	header, nav, main, footer {
+		/* Give them a fixed width so they stop growing: give them max-width: 1280px in an earlier style, or here say: */
+		width: 1280px;
+		/* To horizontally center an element in its container: */
+		margin: 0 auto;
+	}
+} /* closes 1280px M Q */

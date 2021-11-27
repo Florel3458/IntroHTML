@@ -1,0 +1,96 @@
+<!doctype html>
+<!-- 
+	Student Name: Elizabeth Weisbrod
+	File Name: index.html
+	Today's Date: Nov 18, 2021
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- needed for mobile -->
+    <title>Responsive Layout Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper-header">
+        <header>
+            <h1>Cats Website</h1>
+        </header>
+    </div> <!-- closes .wrapper-header -->
+
+    <div class="wrapper-nav">
+        <!-- nav area to add hyperlinks to other pages within the website -->
+        <nav>
+            <button class="menu-icon">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div> <!-- closes .wrapper-nav -->
+
+    <div class="wrapper-main">
+        <main>
+            <!-- Hero image; usually only for Home page. Choose one that's wide but short enough not to push content down out of sight. Connect to the cropped one in the images folder -->
+            <img src="images/serval-landscape.jpg" alt="serval" class="hero-image-mobile">
+            <img src="images/serval-landscape-cropped.jpg" alt="serval" class="hero-image-desktop">
+
+            <!-- page title, different per page -->
+            <h2>News</h2>
+
+            <!-- surround any complete block of content (that has a heading) with article, rather than div -->
+            <article>
+                <h3>Serval Stalks Oakdale</h3>
+
+                <!-- surround any block of content (that has a heading)  with section, rather than div -->
+                <section>
+                    <h4>Residents Hear Strange Howling</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor. </p>
+
+                    <ul>
+                        <li>Cat was seen at 6am on Main St.</li>
+                        <li>Cat was seen at 2pm on Oak St.</li>
+                        <li>Cat was seen at 11pm on Elm St.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>The Beast Captured</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor. </p>
+                </section>
+            </article>
+
+            <aside>
+                <h3>Cat Magazine Available</h3>
+
+                <p>Duis autem vel eum iriure dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                
+                <img src="images/serval-portrait.jpg" alt="serval close up">
+
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                <p>Subscribe for only $9.99 a year</p>
+
+                <p><a href="#">Click to subscribe</a></p>
+
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            </aside>
+        </main>
+    </div> <!-- closes .wrapper-main -->
+
+    <div class="wrapper-footer">
+        <footer>
+            <p class="footer-small-text">&copy; John Doe</p>
+        </footer>
+    <div class="wrapper-footer"> <!-- closes .wrapper-footer -->
+</body>
+
+</html>
