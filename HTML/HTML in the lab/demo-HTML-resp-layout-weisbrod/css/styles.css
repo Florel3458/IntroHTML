@@ -11,9 +11,14 @@ body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, p, div, img {
 	border: 0;
 }
 
-.menu-icon { /* this wasn't in the demo but i figured it looked a little nicer */
+/* this wasn't in the demo but i figured it looked a little nicer */
+.menu-icon {
+	color:#cccc99;
 	background-color:#000000;
-	color:#cccc99
+}
+
+.menu-icon:active {
+	color: #ffffff;
 }
 
 /* STYLING FOR IMAGES (unless overruled further down in this sheet) */
