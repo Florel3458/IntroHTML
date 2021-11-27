@@ -11,6 +11,11 @@ body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, p, div, img {
 	border: 0;
 }
 
+.menu-icon { /* this wasn't in the demo but i figured it looked a little nicer */
+	background-color:#000000;
+	color:#cccc99
+}
+
 /* STYLING FOR IMAGES (unless overruled further down in this sheet) */
 img {
 	/* make image widen to fill the tag it's inside of: */
@@ -180,13 +185,11 @@ nav li a:hover {
 }
 
 .hero-image-mobile {
-	display: block;
-	/* appears for small screens */
+	display: block; /* appears for small screens */
 }
 
 .hero-image-desktop {
-	display: none;
-	/* hidden for small screens */
+	display: none; /* hidden for small screens */
 }
 
 /* STYLING FOR WIDER SCREENS -- add Bracket Pair Colorizer 2 Extension to VS Code to colorize braces */
@@ -223,13 +226,11 @@ nav li a:hover {
 	}
 
 	.hero-image-mobile {
-		display: none;
-		/* hidden for wider screens */
+		display: none; /* hidden for wider screens */
 	}
 
 	.hero-image-desktop {
-		display: block;
-		/* appears for wider screens */
+		display: block; /* appears for wider screens */
 	}
 } /* closes 768px M Q */
 
