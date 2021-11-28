@@ -6,7 +6,6 @@
 <html lang="en">
 
 <head>
-    <!-- page setup and title -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css">
@@ -19,49 +18,48 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/dnd-5e-logo.png" alt="D&D 5e logo" title="D&D 5e logo" class="center"></a>
+    <div class="wrapper-header">
+        <header>
+            <h1 class="header-text">D&D</h1>
+            <a href="index.html"><img src="images/dnd-5e-logo.png" title="D&D 5e logo" alt="D&D 5e logo"
+                    class="header-logo"></a>
+        </header>
+    </div> <!-- closes .wrapper-header -->
+    <div class="wrapper-nav">
         <nav>
-            <!-- navigation links -->
+            <button class="menu-icon">&#9776;</button>
             <ul>
-                <li><sup><b>&#8766;</b></sup> &nbsp; &nbsp; &nbsp; &#8812; &nbsp;</li>
-                <li><a href="index.html"><b>Homepage</b></a> &nbsp; &#8812; &nbsp;</li>
-                <li><a href="about.html"><b>About D&D</b></a> &nbsp; &#8812; &nbsp;</li>
-                <li><a href="resources.html"><b>Get started</b></a> &nbsp; &#8812; &nbsp;</li>
-                <li><a href="contact.html"><b>Contact page</b></a> &nbsp; &#8812; &nbsp; &nbsp; &nbsp;
-                    <sup><b>&#8766;</b></sup></li>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About D&D</a></li>
+                <li><a href="resources.html">Get started</a></li>
+                <li><a href="contact.html">Contact page</a></li>
             </ul>
         </nav>
-        <br>
-        <h1>Replace me with [BIG] text</h1>
-        <br>
-    </header>
-    <main>
-        <!-- bulk of the page -->
-        <img src="〇" alt="〇" title="〇" class="center" style="width: 25%;">
-        <p class="caption">Put a caption of the image here</p>
-        <h2>Replace me with some text</h2>
-        <br>
-        <p>
-            Put some stuff in here
-        </p>
-    </main>
-    <br><br>
-
-    <footer>
-
-        <!-- copyright and sources -->
-        <p><b>Dungeons & Dragons Copyright &copy; 1993-
+    </div> <!-- closes .wrapper-nav -->
+    <div class="wrapper-main">
+        <main>
+            <h1>Replace me with [BIG] text</h1>
+            <img src="〇" alt="〇" title="〇" class="hero-image">
+            <p class="caption">Put a caption of the image here</p>
+            <h2>Replace me with some text</h2>
+            <p>
+                Put some stuff in here
+            </p>
+        </main>
+    </div> <!-- closes .wrapper-main -->
+    <div class="wrapper-footer">
+        <footer>
+            <!-- copyright and sources -->
+            <p>Dungeons & Dragons Copyright &copy; 1993-
                 <script>
                     document.write(new Date().getFullYear());
                 </script> Wizards of the Coast LLC,
                 a subsidiary of Hasbro, Inc. All Rights Reserved.
-            </b>
-        </p>
-        <p><b>Logo image from <a href="https://dnd.wizards.com/" target="_blank">the official
-                    Dungeons and Dragons website</a></b></p>
-
-    </footer>
+            </p>
+            <p>Logo image from <a href="https://dnd.wizards.com/" target="_blank">the official
+                    Dungeons and Dragons website</a></p>
+        </footer>
+    </div> <!-- closes .wrapper-footer -->
 </body>
 
 </html>

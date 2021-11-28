@@ -10,103 +10,262 @@ body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, p, div, img {
     border: 0;
 }
 
-img {
-    width: 100%;
-    display: block;
+main {
+    padding: 1rem 0;
 }
 
-.center {
-    display: block;
-    margin: 0 auto;
-    width: 25%;
+.menu-icon {
+    color:#e00000;
 }
 
 header {
-    background-color: #f0f0c8;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: 5% auto;
+}
+
+body {
+    color: #dc143c;
+    line-height: 1.4;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: #ff00d0;
+}
+
+a:hover{
+    color: #770000;
+}
+
+nav {
+    color: #e00000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #770000;
+    background-color: #ebebb3
+}
+
+aside {
+	padding: 1rem;
+    background-color: #ebebb3;
+}
+
+article {
+	padding: 1rem 1rem 2rem;
+}
+
+section {
+	padding: 1rem 0;
+}
+
+.stat-block {
+    text-align: center;
+}
+
+.stat-block ul {
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 0;
+}
+
+.caption {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.wrapper-header {
+    background-color:#dadaa2;
+}
+
+.wrapper-footer {
+    text-align: center;
+    background-color:#baba82;
+    color: #000000;
+    margin: 0 auto;
+}
+
+.wrapper-nav {
+    border-width: 2px;
+    border-bottom-style: outset;
+    border-color: #d00000;
+    background-color:#fefed6
+}
+
+.wrapper-main {
+    background-color:#fefed6;
+}
+
+/* TYPOGRAPHIC STYLING */
+p {
+	font-size: 1rem;
+	padding-bottom: .5rem;
+}
+
+li {
+	font-size: 1rem;
+	padding-bottom: .5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	/* in case heading flows onto a second line: */
+	line-height: 1.1;
 }
 
 h1, h2 {
     text-align: center;
     color: #b22222;
     font-family: 'Dancing Script', cursive;
-    font-size: 2em
 }
 
-body {
-    background-color: #fafad2;
-    color: #dc143c;
+h1 {
+    font-size: 1.8rem;
 }
 
-a{
-    color: #ff00d0;
-}
-a:hover{
-    color: #770000;
+h2 {
+	font-size: 2rem;
+	margin: 1rem .5rem;
 }
 
-nav {
-    margin: 0.5em;
-    background-color: #f3f3d1;
-    color: #e00000;
-    border-width: 2px;
-    border-bottom-style: outset;
-    border-color: #d00000;
-}
-nav ul {
-    list-style-type: none;
-    margin: 1em;
-    text-align: center;
-}
-nav li {
-    display: inline-block;
-}
-nav li a {
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    color: #ff0000;
-}
-nav li a:hover {
-    color: #770000;
-}
-nav li i {
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    color: #000000
+h3 {
+	font-size: 1.6rem;
 }
 
-main {
-    padding: 3%;
-    font-size: 115%;
+h4 {
+	font-size: 1.4rem;
 }
 
-.StatBlock {
-    text-align: center;
-    background-color: #f3f3cb;
-}
-.StatBlock ul {
-    list-style-type: none;
-    margin: 0.5em;
-    padding: 0;
+h5 {
+	font-size: 1.2rem;
 }
 
-footer {
-    background-color: #f2f2ca;
-}
-footer p {
-    font-size: 0.75em;
-    text-align: center;
-    color: #000000;
-    padding: 0 1em;
+h6 {
+	font-size: .8rem;
 }
 
-.caption {
-    font-size: 0.85em;
-    text-align: center;
-}
+@media screen and (min-width:480px) {
+	html {
+		/* scale all em, rem, and % amounts up by 10%: */
+		font-size: 110%;
+	}
 
-.info {
-    padding: 0.5em;
-    background-color: #f3f3cb
-}
+	header, nav, main, footer {
+		margin: 0 2%;
+	}
+
+    .header-logo {
+        max-width: 90%;
+    }
+    
+    .hero-image {
+        max-width: 90%;
+    }
+} /* closes 480px M Q */
+
+
+
+@media screen and (min-width:768px) {
+	html {
+		/* scale all em, rem, and % amounts up by 20%: */
+		font-size: 120%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 4%;
+	}
+
+	/* on wider screens, hide mobile menu icon and display main nav links side-by-side: */
+	.menu-icon {
+		display: none;
+	}
+
+	nav li {
+		display: inline-block;
+	}
+    
+    .header-logo {
+        max-width: 65%;
+    }
+    
+    .hero-image {
+        max-width: 65%;
+    }
+} /* closes 768px M Q */
+
+@media screen and (min-width:960px) {
+	html {
+		/* scale all em, rem, and % amounts up by 40%: */
+		font-size: 140%;
+	}
+
+	header, nav, main, footer {
+		margin: 0 8%;
+	}
+    
+    .header-logo {
+        max-width: 55%;
+    }
+    
+    .hero-image {
+        max-width: 55%;
+    }
+} /* closes 960px M Q */
+
+@media screen and (min-width:1280px) {
+	html {
+		/* scale all em, rem, and % amounts up by 50%: */
+		font-size: 150%;
+	}
+
+	header, nav, main, footer {
+		/* Give them a fixed width so they stop growing: give them max-width: 1280px in an earlier style, or here say: */
+		width: 1280px;
+		/* To horizontally center an element in its container: */
+		margin: 0 auto;
+	}
+
+    .header-logo {
+        max-width: 40%;
+    }
+    
+    .hero-image {
+        max-width: 40%;
+    }
+} /* closes 1280px M Q */

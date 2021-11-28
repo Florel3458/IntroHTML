@@ -97,7 +97,8 @@ function rollStats() {
         case 6:
         case 5:
         case 4:
-            document.getElementById("rollHiFlavor").innerHTML = "You would definitely be able to make a strong character with this!";
+            document.getElementById("rollHiFlavor").innerHTML = "You would definitely be able to make" + "<br>" +
+                "a strong character with this!";
             break
         case 3:
             document.getElementById("rollHiFlavor").innerHTML = "This is pretty good!" + "<br>" +
