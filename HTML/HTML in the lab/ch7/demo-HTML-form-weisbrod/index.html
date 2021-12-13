@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo - HTML and CSS for Forms</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="wrapper-header">
+    <header>
+      <h1>My Site</h1>
+    </header>
+  </div>
+
+  <div class="wrapper-content">
+    <main>
+      <h2>Pizza Survey</h2>
+
+      <form action="process.html" method="get">
+        <!-- A TEXT INPUT FIELD lets the user type in anything -->
+        <div class="form-group">
+          <label for="input-place">What is your favorite place to get pizza?</label>
+          <input type="text" name="pizzaPlace" placeholder="Type here" id="input-place" required />
+        </div> <!-- /.form-group -->
+
+        <!-- a TEXTAREA can show multiple lines of typed-in input -->
+        <div class="form-group">
+          <label for="input-exp">Describe an experience with pizza:</label>
+          <textarea name="pizzaExp" placeholder="Type here" id="input-exp"></textarea>
+        </div> <!-- /.form-group -->
+
+        <!-- A DROPDOWN (SELECT) lets the user choose from a set of predetermined responses -->
+        <div class="form-group">
+          <label for="input-pine">Does pineapple belong on pizza?</label>
+          <select name="pizzaPineapple" id="input-pine">
+            <option>Yes</option>
+            <option value="negative">No</option>
+            <option>It depends</option>
+          </select>
+        </div> <!-- /.form-group -->
+
+        <!-- RADIO BUTTONS lets the user choose from a set of predetermined responses -->
+        <div class="form-group">
+          How many pizzas have you eaten?
+          <div class="radio-set">
+            <input type="radio" name="pizzaQuantity" value="exactly 13" id="input-quan1" checked />
+            <label for="input-quan1">Exactly 13</label>
+            <br>
+            <input type="radio" name="pizzaQuantity" value="fewer than 50" id="input-quan2" />
+            <label for="input-quan2">Fewer than 50</label>
+            <br>
+            <input type="radio" name="pizzaQuantity" value="between 51-1000" id="input-quan3" />
+            <label for="input-quan3">Between 51-1000</label>
+            <br>
+            <input type="radio" name="pizzaQuantity" value="more than 1000" id="input-quan4" />
+            <label for="input-quan4">More than 1000</label>
+          </div> <!-- /.radio-set -->
+        </div> <!-- /.form-group -->
+
+        <!-- A set of CHECKBOXES lets user choose MORE THAN ONE from a set of predetermined responses -->
+        <div class="form-group">
+          <div class="checkbox-set">
+            <input type="checkbox" name="userDescr[]" value="Tasty" id="input-descr1" />
+            <label for="input-descr1">Tasty</label>
+            <br>
+            <input type="checkbox" name="userDescr[]" value="Nourishing" id="input-descr2" />
+            <label for="input-descr2">Nourishing</label>
+            <br>
+            <input type="checkbox" name="userDescr[]" value="Fun" id="input-descr3" />
+            <label for="input-descr3">Fun</label>
+          </div> <!-- /.checkbox-set -->
+        </div> <!-- /.form-group -->
+
+        <div class="form-group">
+          <!-- <input type="submit" value="Done" /> -->
+          <button type="submit">Done</button>
+          <button type="reset">Clear</button>
+        </div> <!-- /.form-group -->
+      </form>
+    </main>
+  </div> <!-- closes .wrapper-content -->
+
+</body>
+
+</html>

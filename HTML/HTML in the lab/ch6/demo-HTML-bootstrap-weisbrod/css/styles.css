@@ -1,0 +1,22 @@
+/*
+Author: Elizabeth Weisbrod
+Date: Nov 30, 2021
+File Name: styles.css
+*/
+
+.my-header-bg-strip {
+    background-color: lavender;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+header {
+    margin-top: 5rem;
+}
+
+/* .container {
+    border: 2px solid blue;
+} */
+
