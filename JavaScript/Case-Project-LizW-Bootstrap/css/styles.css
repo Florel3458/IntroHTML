@@ -12,7 +12,6 @@ body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, p, div, img {
 }
 
 header {
-    /* border: 1px solid red; */
     margin: 4.5rem 0 2rem;
 }
 
@@ -32,6 +31,28 @@ body h1, figcaption {
     text-align: center;
 }
 
+.hero-image {
+    margin-top: 1.5rem;
+}
+
+figcaption {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    margin-top: 2.5rem
+}
+
 .row {
     margin-bottom: 1rem;
+}
+
+.container {
+    border: solid red 1px;
+}
+
+@media screen and (min-width:768px) {
+    .right-align {
+        text-align: right;
+    }
 }
