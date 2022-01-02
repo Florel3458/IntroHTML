@@ -1,0 +1,17 @@
+/*
+Author: Elizabeth Weisbrod
+Date: Dec 21, 2021
+File Name: styles.css
+*/
+body {
+    padding: 1rem;
+    border: solid 1px black;
+}
+form {
+    padding: 1rem;
+    border: solid 1px blue;
+}
+.more-quotes {
+    border: 2px dotted green;
+}
+    

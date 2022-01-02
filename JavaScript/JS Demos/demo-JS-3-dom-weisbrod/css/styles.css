@@ -1,0 +1,24 @@
+/*
+Author:
+Date: Dec 21, 2021
+File Name: styles.css
+*/
+body {
+    padding: 1rem;
+    border: solid 1px black;
+}
+.container {
+    padding: 1rem;
+    border: solid 1px red;
+}
+form {
+    padding: 1rem;
+    border: solid 1px blue;
+}
+.fiery {   
+    color:#f99;
+    background-color:#900;
+    border: #f00 solid 10px;
+}
+
+    

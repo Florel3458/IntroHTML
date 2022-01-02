@@ -1,0 +1,92 @@
+<!doctype html>
+<!-- 
+	Student Name: 
+	File Name: page2.html
+	Today's Date: Dec 23, 2021
+ -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Activity - Events and Conditions - page 2</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/do-not-touch.js" defer></script>
+  <script src="js/script-2.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>JS Events and Conditions</h1>
+    <nav class="main-nav">
+      <ol>
+        <li>
+          <p>Complete BOTH pages:</p>
+        </li>
+        <li><a class="main-link" href="index.html">Page 1</a></li>
+        <li><a class="main-link" href="page2.html">Page 2</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main class="narrow-main">
+    <h2>Page 2: Events, Forms, and Conditionals</h2>
+    <p>Code the js/script-2.js file to complete the tasks below. Do not alter the HTML in the body, and do not alter the
+      CSS document.</p>
+
+    <p>10. When the user clicks the "Donate" button below, alert the message "Including a $5 service charge, please mail
+      us a check for" followed by the amount they typed increased by 5. <a href="#" class="hint">(click here for a
+        hint)</a></p>
+    <form>
+      <fieldset>
+        <p>Donation amount: $<input type="text" id="input-amount" />
+          <button id="amount-submit">Donate</button>
+        </p>
+      </fieldset>
+    </form>
+
+    <p>11. Depending on the selection the user makes from the select element below, color the background of the select
+      element differently. For example, if they choose "sad" in the select element, color the background of the select
+      element blue. <a href="#" class="hint">(click here for a hint)</a></p>
+    <form>
+      <fieldset>
+        <p>Choose the emotion you feel:
+          <select id="input-emo">
+            <option>happy</option>
+            <option>sad</option>
+            <option>curious</option>
+          </select>
+        </p>
+      </fieldset>
+    </form>
+
+    <p>12. Notice the form below has an action that sends the browser back to the index page when submitted. Whenever the
+      user clicks "Submit this form", if the value in the password field is lower than 123, log the message "too low" in
+      the console but DO NOT let the form submit. And if they enter a number higher than 123, log "too high" in the
+      console but DO NOT let the form submit. But if they enter the value 123, let the form submit. <a href="#"
+        class="hint">(click here for a hint)</a></p>
+    <form id="form-3" action="index.html" method="post">
+      <fieldset>
+        <p>Prove you are not a robot. Type the number 123: <input type="number" id="input-usernum" />
+          <button type="submit">Submit this form</button>
+        </p>
+      </fieldset>
+    </form>
+
+    <p class="extra"><b>EXTRA CREDIT:</b> Add code to the event listener for the Donate button so that clicking the Donate button also takes what the user typed in the amount input field and makes it into another option in the emotion select dropdown. Each repeated click on the Donate button should add yet another option to the emotion dropdown.</p>
+  </main>
+
+  <footer>
+    <nav class="main-nav">
+      <ol>
+        <li>
+          <p>Complete BOTH pages:</p>
+        </li>
+        <li><a class="main-link" href="index.html">Page 1</a></li>
+        <li><a class="main-link" href="page2.html">Page 2</a></li>
+      </ol>
+    </nav>
+  </footer>
+</body>
+
+</html>
