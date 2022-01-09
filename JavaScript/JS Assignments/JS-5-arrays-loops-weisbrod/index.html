@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Elizabeth Weisbrod
+	File Name: index.html
+	Today's Date: Jan 4, 2022
+ -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript - Arrays and Loops Activity</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/external-data.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>JS Arrays and Loops Activity</h1>
+  </header>
+
+  <main class="narrow-main">
+
+    <div>
+      <h3>1. Output one element from an array</h3>
+      <p class="instructions">In the given 'external-data' JavaScript file, create a basic array containing 6 barnyard animals of your choice. Be sure the HTML page connects to that file. Then put the event listener code for each button below in the script.js file.</p>
+      <button id="button-1">Click me to output the second element from the barnyard animal array to the div "output-1" below:</button> 
+      <div class="output" id="output-1">Output 1 goes here</div>
+    </div>
+
+    <div>
+      <h3>2. Simply loop a string (no array or JSON object involved)</h3>
+      <p class="instructions">Use a 'for' loop for this one.</p>
+      <button id="button-2">Click me to output a phrase of your choice ("Avengers assemble" for example) to the div "output-2" below 100 times. Number each sequentially (1, 2, 3, etc.):</button> 
+      <div class="output" id="output-2">Output 2 goes here</div>
+    </div>
+
+    <div>
+      <h3>3. Simply loop an HTML image element (no array or JSON object involved)</h3>
+      <p class="instructions">Use a 'for' loop for this one. And use the 'icon1.png' image that's already in the images folder.</p>
+      <button id="button-3">Click me to cause some HTML that displays the 'icon1' image to output to the div "output-3" below 15 times:</button> 
+      <div class="output" id="output-3">Output 3 goes here</div>
+    </div>
+
+    <div>
+      <h3>4. Output all elements from an array using a loop</h3>
+      <p class="instructions">In the given 'external-data' JavaScript file, create another basic array containing 4 song titles of your choice.</p>
+      <button id="button-4">Click me to output all the elements from the song title array to the div "output-4" below, using a 'for' loop. In some way, cause a line break between each one:</button> 
+      <div class="output" id="output-4">Output 4 goes here</div>
+    </div>
+
+    <div>
+      <h3>5. Add element to array, then output all elements from the array using a loop</h3>
+      <p class="instructions">This one is just like the last one, but add the user's choice of song title to the array first...</p>
+      <p><label for="input-title">Song Title to add:</label> <input type="text" id="input-title"></p>
+      <button id="button-5">Click me to add what the user typed in the input field to the Song Title array, then immediately empty the div "output-5" below and then output all the elements from the song title array to div "output-5" using a 'for' loop. Keep a line break between each one:</button> 
+      <div class="output" id="output-5">Output 5 goes here</div>
+    </div>
+
+    <div>
+      <h3>6. Output one element from a JSON object</h3>
+      <p class="instructions">In the given 'external-data' JavaScript file, create a JSON object containing 4 products, giving each three key-value pairs (name, price, etc.).</p>
+      <button id="button-6">Click me to output to the div "output-6" below any one key-value pair's value (not the key) for any one product from the JSON object (for example, you might output the price value of product #2):</button> 
+      <div class="output" id="output-6">Output 6 goes here</div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>

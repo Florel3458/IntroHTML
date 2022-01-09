@@ -8,6 +8,7 @@ document.getElementById("button-1").onclick = function() {
 
 // 2. Hover over me to change item C. in the Summer To-Do List to say a different phrase. (It can stay that way permanently) 
 let parentToDoList = document.getElementsByTagName("ol")[1];
+
 document.getElementById("button-2").onmouseover = function() {
     parentToDoList.getElementsByTagName("li")[2].innerHTML = "Discover something that doesn't exist";
 }
@@ -39,6 +40,7 @@ document.getElementsByTagName("button")[5].onclick = function() {
 
 // 7. Click me to add to the Summer To-Do List an HTML list item that says "Earn some money" 
 let listItem1 = document.createElement("li");
+
 listItem1.innerHTML = "Earn some money";
 document.getElementsByTagName("button")[6].addEventListener("click",
 function() {
@@ -47,6 +49,7 @@ function() {
 
 // 8. Click me to add to the Summer To-Do List an HTML list item that says "Go Zip Lining" 
 let listItem2 = document.createElement("li");
+
 listItem2.innerHTML = "Go Zip Lining";
 document.getElementsByTagName("button")[7].addEventListener("click",
 function() {
